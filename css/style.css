@@ -23,7 +23,7 @@ body {
         flex-direction: column;
         margin: 0 auto;
         /* border: 1px blue solid; */
-        width:99%;
+        width: 99%;
         align-items: flex-end;
     }
 }
@@ -45,8 +45,7 @@ body {
     .date-time {
         position: absolute;
         text-align: center;
-        margin-bottom: 20px;
-        margin: 0;
+        margin-top: 20px;
         margin-left: -10px;
         /* border: 1px red solid; */
     }
@@ -68,6 +67,12 @@ body {
 .name {
     flex-direction: column;
     margin: 0 auto;
+}
+
+@media only screen and (max-width:768px) {
+    .name {
+        margin-top: 40px;
+    }
 }
 
 #methodize {
@@ -118,7 +123,7 @@ body {
 @media only screen and (max-width:768px) {
     #particles-js {
         width: 99%;
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
 
@@ -167,8 +172,9 @@ body {
 
 @media only screen and (max-width:768px) {
     .about {
+        margin-top:40px;
         background-color: rgba(0, 0, 0, 0);
-        width:100%;
+        width: 100%;
     }
 }
 
@@ -200,6 +206,13 @@ body {
     margin-top: 20px;
     /* margin-bottom:20px; */
     text-align: center;
+    width:100%;
+}
+
+@media only screen and (max-width){
+    .button{
+        margin-top:10px;
+    }
 }
 
 button {
@@ -227,21 +240,38 @@ button:focus {
     outline: 0;
 }
 
+
+
 .social {
     display: flex;
     justify-content: flex-end;
-    /* border:1px red solid; */
     width: 100%;
+    align-items:center;
+    align-content:center;
     /* padding-top:20px; */
     /* border: 1px blue solid; */
+    height:100%;
+    margin-bottom:100px;
+}
+
+@media only screen and (max-width:768px){
+    .social{
+    justify-content: center;
+    }
 }
 
 .fab {
     color: white;
     font-size: 30px;
     padding-right: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     /* border: 1px green solid; */
+}
+
+@media only screen and (max-width:768px){
+    .fab{
+    padding-right: 0;
+    }
 }
 
 /* * {
