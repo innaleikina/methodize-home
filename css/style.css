@@ -4,7 +4,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom center;
-    /* display: block; */
+    display: block;
     overflow: auto;
 }
 
@@ -13,30 +13,30 @@ body {
     flex-direction: row;
     border-radius: 10px;
     margin-bottom: 20px;
-    border: 1px red solid;
+    /* border: 1px red solid; */
     width: 100%;
     margin-bottom: 20px;
 }
 
 .date-time {
-    position:fixed;
+    position: fixed;
     color: white;
     font-family: "Helvetica";
-    width:100px;
+    width: 100px;
     font-size: 11px;
     letter-spacing: .4px;
     line-height: 1.1rem;
     margin-left: 20px;
-    margin-top:20px;
-    border: 1px red solid;
+    margin-top: 20px;
+    /* border: 1px red solid; */
 }
 
 #gradient-top {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.57) 1%, rgba(0, 0, 0, 0.57) 32%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.57) 32%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.57) 1%, rgba(0, 0, 0, 0.57) 32%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.57) 32%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.57) 1%, rgba(0, 0, 0, 0.57) 32%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.57) 32%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91000000', endColorstr='#00000000', GradientType=0);
     /* IE6-9 */
@@ -47,9 +47,8 @@ body {
 .name {
     flex-direction: column;
     /* text-align:left; */
-    border: 1px red solid;
+    /* border: 1px red solid; */
     margin: 0 auto;
-
 }
 
 #methodize {
@@ -80,20 +79,69 @@ body {
     /* border: 1px white solid; */
     height: 60px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-#about {
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.about {
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: 2s fade-in;
+    margin-bottom: 80px;
+    border: 1px blue;
+}
+
+#about-text {
     color: white;
-    font-family: "Helvetica";
-    line-height: 30px;
+    font-family: "Baskerville";
+    line-height: 29px;
     font-size: 13.5px;
-    letter-spacing: 4px;
-    width: 400px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    letter-spacing: 2px;
+    width: 300px;
+    text-align: left;
+    padding: 40px;
+    padding-bottom: 50px;
     border-radius: 10px;
-    border: 2px white solid;
+    /* border: 2px rgba(255,255,255,.5) solid; */
+    -webkit-animation: 2s fade-in;
+    -moz-animation: 2s fade-in;
+    -o-animation: 2s fade-in;
+    animation: 2s fade-in;
+    background-color:rgba(255,255,255,.1)
 }
 
 .flex {
@@ -103,10 +151,48 @@ body {
 
 .button {
     margin-top: 20px;
+    /* margin-bottom:20px; */
+    text-align: center;
 }
 
 button {
+    margin: 0 auto;
     height: 60px;
-    width: 160px;
+    width: 170px;
     border-radius: 10px;
+    font-family: "Helvetica";
+    letter-spacing: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-weight: bold;
+    transition: .5s all;
+    text-align: center;
+    /* display: table-cell; */
 }
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    /* border:1px red solid; */
+    width: 100vw;
+    /* padding-top:20px; */
+}
+
+.fab {
+    color: white;
+    font-size: 30px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
