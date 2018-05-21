@@ -18,6 +18,16 @@ body {
     margin-bottom: 20px;
 }
 
+@media only screen and (max-width:768px) {
+    #top-flex {
+        flex-direction: column;
+        margin: 0 auto;
+        /* border: 1px blue solid; */
+        width:99%;
+        align-items: flex-end;
+    }
+}
+
 .date-time {
     position: fixed;
     color: white;
@@ -31,6 +41,17 @@ body {
     /* border: 1px red solid; */
 }
 
+@media only screen and (max-width:768px) {
+    .date-time {
+        position: absolute;
+        text-align: center;
+        margin-bottom: 20px;
+        margin: 0;
+        margin-left: -10px;
+        /* border: 1px red solid; */
+    }
+}
+
 #gradient-top {
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.57) 32%, rgba(0, 0, 0, 0.02) 98%, rgba(0, 0, 0, 0) 100%);
     /* FF3.6-15 */
@@ -40,14 +61,12 @@ body {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91000000', endColorstr='#00000000', GradientType=0);
     /* IE6-9 */
-    width: 100vw;
+    width: 100%;
     margin: 0;
 }
 
 .name {
     flex-direction: column;
-    /* text-align:left; */
-    /* border: 1px red solid; */
     margin: 0 auto;
 }
 
@@ -62,6 +81,13 @@ body {
     /* text-align: center; */
 }
 
+@media only screen and (max-width:768px) {
+    #methodize {
+        font-size: 30px;
+        margin: 60px auto 0 auto;
+    }
+}
+
 #organize {
     color: white;
     font-size: 12px;
@@ -74,12 +100,26 @@ body {
     /* border:1px red solid; */
 }
 
+@media only screen and (max-width:768px) {
+    #organize {
+        font-size: 10px;
+        margin: 0px auto 0 auto;
+    }
+}
+
 #particles-js {
     width: 500px;
     /* border: 1px white solid; */
     height: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width:768px) {
+    #particles-js {
+        width: 99%;
+        margin:0 auto;
+    }
 }
 
 @-webkit-keyframes fade-in {
@@ -122,7 +162,14 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     animation: 2s fade-in;
     margin-bottom: 80px;
-    border: 1px blue;
+    /* border: 1px blue; */
+}
+
+@media only screen and (max-width:768px) {
+    .about {
+        background-color: rgba(0, 0, 0, 0);
+        width:100%;
+    }
 }
 
 #about-text {
@@ -141,7 +188,7 @@ body {
     -moz-animation: 2s fade-in;
     -o-animation: 2s fade-in;
     animation: 2s fade-in;
-    background-color:rgba(255,255,255,.1)
+    background-color: rgba(255, 255, 255, .1)
 }
 
 .flex {
@@ -176,12 +223,17 @@ button:hover {
     color: black;
 }
 
+button:focus {
+    outline: 0;
+}
+
 .social {
     display: flex;
     justify-content: flex-end;
     /* border:1px red solid; */
-    width: 100vw;
+    width: 100%;
     /* padding-top:20px; */
+    /* border: 1px blue solid; */
 }
 
 .fab {
@@ -189,10 +241,11 @@ button:hover {
     font-size: 30px;
     padding-right: 20px;
     margin-bottom: 20px;
+    /* border: 1px green solid; */
 }
 
 /* * {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-} */
+        background: #000 !important;
+        color: #0f0 !important;
+        outline: solid #f00 1px !important;
+    } */
