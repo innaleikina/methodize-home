@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 337,
+      "value": 200,
       "density": {
         "enable": true,
         "value_area": 250
@@ -30,17 +30,17 @@
       "random": false,
       "anim": {
         "enable": true,
-        "speed": 6,
+        "speed": 1,
         "opacity_min": 0.1,
         "sync": true
       }
     },
     "size": {
       "value": 3,
-      "random": true,
+      "random": false,
       "anim": {
         "enable": true,
-        "speed": 4,
+        "speed": 1,
         "size_min": 0.1,
         "sync": false
       }
@@ -88,13 +88,13 @@
       "bubble": {
         "distance": 400,
         "size": 40,
-        "duration": 2,
+        "duration": 6,
         "opacity": 8,
-        "speed": 3
+        "speed": 15
       },
       "repulse": {
         "distance": 200,
-        "duration": 0.4
+        "duration": 6
       },
       "push": {
         "particles_nb": 4
